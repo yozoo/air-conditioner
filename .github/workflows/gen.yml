@@ -20,3 +20,5 @@ jobs:  # workflows文件主体，可以指定一个或者多个，这里指定�
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 这里是我们刚刚创建密钥的变量名称
         FOLDER: build
+        publish_dir: ./dist
+        force_orphan: true
