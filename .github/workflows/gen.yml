@@ -7,7 +7,7 @@ jobs:  # workflows文件主体，可以指定一个或者多个，这里指定�
   build-and-deploy:
     runs-on: ubuntu-latest # 在最新的ubuntu上运行
     steps: # 指定每个job的运行步骤
-    - name: Checkout # 步骤名称
+    - name: Checkout # 步骤
       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
